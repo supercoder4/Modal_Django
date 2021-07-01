@@ -1,0 +1,22 @@
+td.info{ 
+    text-align: center;
+    vertical-align: middle;
+}
+
+.img-pointer{
+    cursor: pointer;
+}
+
+/*modal radius*/
+.modal-content{
+    border-radius: 3%;
+}
+
+#modal-img{
+   height: 250px;
+}
+
+/*modal backdrop*/
+.modal{
+    background-color: rgba(0, 0, 0, 0.5);
+}

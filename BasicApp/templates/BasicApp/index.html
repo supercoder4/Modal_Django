@@ -1,0 +1,49 @@
+{% extends 'BasicApp/base.html' %}
+{% load static %}
+{% block title %}
+    Index
+{% endblock title %}
+    
+
+{% block body %}
+    <!-- Modal -->
+    <div class="modal fade" id="previewImgModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content shadow">
+            <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Preview</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body" id="modal-body">
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div class="spinner-border" role="status" id="spinner"></div>
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col"><strong>#</strong></th>
+            <th scope="col"><strong>Image</strong></th>
+            <th scope="col"><strong>Desciption</strong></th>
+          </tr>
+        </thead>
+        <tbody id="table-body-box">
+         
+        </tbody>
+    </table>
+    <h1><div class="text-center" id="incrementVal">0</div></h1>
+    
+    <button id="decrementBtn" class="btn btn-outline-danger shadow-none">Decrement</button>
+    <button id="incrementBtn" class="btn btn-dark shadow-none">Increment</button>
+{% endblock body %}
+    
+
+
